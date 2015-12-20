@@ -1,0 +1,16 @@
+[
+{
+  "modid": "zoomturd",
+  "name": "Mythical Minecraft",
+  "description": "Adds cool mystical stuff to minecraft",
+  "version": "{Alpha}",
+  "mcversion": "{1.8}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ZOOMTURD"],
+  "credits": "The Forge and FML guys, for making this possible and ZOOMTURD for code, models, and textures.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
