@@ -1,7 +1,6 @@
 package com.zoomturd.items.render;
 
 import com.zoomturd.items.ModItems;
-import com.zoomturd.items.modblocks;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderItem;
@@ -22,6 +21,29 @@ public final class ItemRenderRegister {
     
     	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
         .register(ModItems.reapsting, 0, new ModelResourceLocation("zoomturd:reapsting", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.bonesword, 0, new ModelResourceLocation("zoomturd:bonesword", "inventory"));
    
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.handlewrap, 0, new ModelResourceLocation("zoomturd:handlewrap", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.boneblade, 0, new ModelResourceLocation("zoomturd:boneblade", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.bonehandle, 0, new ModelResourceLocation("zoomturd:bonehandle", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.blood, 0, new ModelResourceLocation("zoomturd:blood", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.celestialbronzesword, 0, new ModelResourceLocation("zoomturd:celestialbronzesword", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.imperialgoldsword, 0, new ModelResourceLocation("zoomturd:imperialgoldsword", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.stygianironsword, 0, new ModelResourceLocation("zoomturd:stygianironsword", "inventory"));
     }
 }

@@ -1,5 +1,6 @@
 package com.zoomturd;
 
+import com.zoomturd.blocks.ModBlocks;
 import com.zoomturd.items.render.ItemRenderRegister;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -8,6 +9,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy extends CommonProxy {
 
+	public void registerRenders() {
+		ModBlocks.registerRenders();
+	}
+	
     @Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);

@@ -1,4 +1,10 @@
 item.celestialbronzeingot.name=Celestial Bronze Ingot
 item.stygianironingot.name=Stygian Iron Ingot
 item.imperialgoldingot.name=Imperial Gold Ingot
-ItemModSword.reapsting.name=Reapsting
+item.reapsting.name=Reapsting
+itemGroup.ctab=Mythical Minecraft
+item.bonesword.name=Bone Sword
+item.handlewrap.name=Handle Wrap
+item.blood.name=Blood
+item.boneblade.name=Bone Blade
+item.bonehandle.name=Bone Handle
