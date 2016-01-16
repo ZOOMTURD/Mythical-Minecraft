@@ -32,6 +32,10 @@ public final class ModItems {
 	
 	public static ItemModSword stygianironsword;
 	
+	public static Item woodenhandle;
+	
+	public static Item woodenspearshaft;
+	
 	public static void createItems() 
     {
     	
@@ -58,6 +62,10 @@ public final class ModItems {
     	GameRegistry.registerItem(bonehandle = new ComponentItem("bonehandle"), "bonehandle");
     	//May change blood's item type
     	GameRegistry.registerItem(blood = new ComponentItem("blood"), "blood");
+    	
+    	GameRegistry.registerItem(woodenhandle = new ComponentItem("woodenhandle"), "woodenhandle");
+    	
+    	GameRegistry.registerItem(woodenspearshaft = new ComponentItem("woodenspearshaft"), "woodenspearshaft");
     }
     public static ToolMaterial BBONE = EnumHelper.addToolMaterial("Bone", 3, 1738, 9.0F, 9, 21);
     //Edit regular bone material

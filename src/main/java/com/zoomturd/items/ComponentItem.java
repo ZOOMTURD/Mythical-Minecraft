@@ -12,6 +12,6 @@ public class ComponentItem extends Item
         super();
         
         this.setUnlocalizedName(unlocalizedName);
-        this.setCreativeTab(CreativeTabs.tabMaterials);
+        this.setCreativeTab(ctab.ctab);
     }
 }

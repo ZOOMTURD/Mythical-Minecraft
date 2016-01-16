@@ -45,5 +45,11 @@ public final class ItemRenderRegister {
     	
     	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
         .register(ModItems.stygianironsword, 0, new ModelResourceLocation("zoomturd:stygianironsword", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.woodenspearshaft, 0, new ModelResourceLocation("zoomturd:woodenspearshaft", "inventory"));
+    	
+    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+        .register(ModItems.woodenhandle, 0, new ModelResourceLocation("zoomturd:woodenhandle", "inventory"));
     }
 }

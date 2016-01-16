@@ -1,6 +1,7 @@
 package com.zoomturd.items;
 
-import net.minecraft.creativetab.CreativeTabs;
+import com.zoomturd.ctab;
+
 import net.minecraft.item.Item;
 
 public class IngotItem extends Item
@@ -10,6 +11,6 @@ public class IngotItem extends Item
         super();
         
         this.setUnlocalizedName(unlocalizedName);
-        this.setCreativeTab(CreativeTabs.tabMaterials);
+        this.setCreativeTab(ctab.ctab);
     }
 }
