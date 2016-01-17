@@ -1,6 +1,7 @@
 package com.zoomturd.blocks.blocks;
 
 import com.zoomturd.ctab;
+import com.zoomturd.mod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +12,7 @@ public class OreBlock extends Block{
 		super(materialIn);
 		this.setHarvestLevel("pickaxe", 3);
 		this.setHardness(7f);
-		this.setCreativeTab(ctab.ctab);
+		this.setCreativeTab(mod.ctab);
 	}
 
 }

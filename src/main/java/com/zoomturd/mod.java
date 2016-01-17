@@ -31,7 +31,7 @@ public class mod
 {
 	WorldGeneratorZOOM worldGenerator = new WorldGeneratorZOOM();
 	
-	public static final CreativeTabs ctab = new ctab("ctab");
+	public static final ctab ctab = new ctab("ctab");
 	
 	@SidedProxy(clientSide="com.zoomturd.ClientProxy", serverSide="com.zoomturd.ServerProxy")
 	public static CommonProxy proxy;

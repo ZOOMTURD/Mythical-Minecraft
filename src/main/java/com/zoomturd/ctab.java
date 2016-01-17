@@ -6,11 +6,9 @@ import net.minecraft.item.Item;
 
 public class ctab extends CreativeTabs{
 
-	public static CreativeTabs ctab;
-
-
 	public ctab(String label) {
 		super(label);
+		this.setBackgroundImageName("ctab.png");
 	}
 
 
