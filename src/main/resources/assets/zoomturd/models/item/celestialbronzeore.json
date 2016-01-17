@@ -1,5 +1,5 @@
 {
-    "parent": "zoomturd:blocks/celestialbronzeore",
+    "parent": "zoomturd:block/celestialbronzeore",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

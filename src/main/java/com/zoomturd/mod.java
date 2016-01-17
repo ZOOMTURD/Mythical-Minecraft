@@ -3,9 +3,11 @@ package com.zoomturd;
 import com.zoomturd.CommonProxy;
 import com.zoomturd.blocks.ModBlocks;
 import com.zoomturd.items.ModItems;
+import com.zoomturd.world.generator.WorldGeneratorZOOM;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -26,6 +28,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = mod.MODID, name = mod.MODNAME, version = mod.VERSION)
 public class mod
 {
+	WorldGeneratorZOOM worldGenerator = new WorldGeneratorZOOM();
+	
 	public static final CreativeTabs ctab = new ctab("ctab");
 	
 	@SidedProxy(clientSide="com.zoomturd.ClientProxy", serverSide="com.zoomturd.ServerProxy")
@@ -44,7 +48,7 @@ public class mod
     	this.proxy.preInit(e);
     	ModBlocks.init();
     	ModBlocks.register();
-    	
+    	worldgeninit.init();
     	
     }
     
@@ -56,11 +60,14 @@ public class mod
     	//recipes
     	GameRegistry.addRecipe(new ItemStack(ModItems.bonesword)," A "," B "," C ",'A', ModItems.boneblade, 'B', ModItems.handlewrap, 'C', ModItems.bonehandle);
     	GameRegistry.addRecipe(new ItemStack(ModItems.reapsting),"DA "," B "," C ",'D', ModItems.blood, 'A', ModItems.boneblade, 'B', ModItems.handlewrap, 'C', ModItems.bonehandle);
+    	//Not recipes
     }
-    
+ 
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) 
     {
     	this.proxy.postInit(e);
     }
 }
+
+
