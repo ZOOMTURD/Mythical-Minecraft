@@ -3,6 +3,7 @@ package com.zoomturd.blocks;
 import com.zoomturd.Reference;
 import com.zoomturd.blocks.blocks.OreBlock;
 
+import com.zoomturd.ctab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;

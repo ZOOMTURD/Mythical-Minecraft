@@ -2,6 +2,7 @@ package com.zoomturd;
 
 import com.zoomturd.CommonProxy;
 import com.zoomturd.blocks.ModBlocks;
+import com.zoomturd.handler.MobDropsHandler;
 import com.zoomturd.items.ModItems;
 import com.zoomturd.world.generator.WorldGeneratorZOOM;
 
@@ -57,9 +58,20 @@ public class mod
     {
     	this.proxy.init(e);
     	proxy.registerRenders();
+    	MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
     	//recipes
     	GameRegistry.addRecipe(new ItemStack(ModItems.bonesword)," A "," B "," C ",'A', ModItems.boneblade, 'B', ModItems.handlewrap, 'C', ModItems.bonehandle);
     	GameRegistry.addRecipe(new ItemStack(ModItems.reapsting),"DA "," B "," C ",'D', ModItems.blood, 'A', ModItems.boneblade, 'B', ModItems.handlewrap, 'C', ModItems.bonehandle);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.handlewrap)," AA"," AA","   ",'A', Items.leather);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.boneblade),"AB "," B ","   ",'A', Items.flint, 'B', Items.bone);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.bonehandle),"BA ","   ","   ", 'A', Items.bone, 'B', Items.flint);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.woodenhandle),"   ","   "," A ", 'A', Items.stick );
+    	GameRegistry.addRecipe(new ItemStack(ModItems.woodenspearshaft),"  A"," A ","A  ", 'A', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.celestialbronzesword)," A "," A "," B ", 'A', ModItems.celestialbronzeingot, 'B', ModItems.woodenhandle);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.imperialgoldsword)," A "," A "," B ", 'A', ModItems.imperialgoldingot, 'B', ModItems.woodenhandle);
+    	GameRegistry.addRecipe(new ItemStack(ModItems.stygianironsword)," A "," A "," B ", 'A', ModItems.stygianironingot, 'B', ModItems.woodenhandle);
+    	//smelting
+    	GameRegistry.addSmelting(ModBlocks.celestialbronzeore, new ItemStack(ModItems.celestialbronzeingot), 1.5F);
     	//Not recipes
     }
  

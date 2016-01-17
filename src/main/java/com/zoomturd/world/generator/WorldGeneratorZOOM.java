@@ -2,6 +2,7 @@ package com.zoomturd.world.generator;
 
 import java.util.Random;
 
+import com.zoomturd.Reference;
 import com.zoomturd.blocks.ModBlocks;
 
 import net.minecraft.world.World;
@@ -15,14 +16,15 @@ public class WorldGeneratorZOOM implements IWorldGenerator {
 	private WorldGenerator celestialbronzeore;
 	
 	public WorldGeneratorZOOM() {
-		this.celestialbronzeore = new WorldGenMinable(ModBlocks.celestialbronzeore.getDefaultState(), 8);
+		//Causes crashes
+		//this.celestialbronzeore = new WorldGenMinable(ModBlocks.celestialbronzeore.getDefaultState(), 8);
 	}
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		switch (world.provider.getDimensionId()) {
 		case 0: 
-			this.addores(celestialbronzeore, world, random, chunkX, chunkZ, 15, 10, 50);
+			this.generator(celestialbronzeore, world, random, chunkX, chunkZ, 15, Reference.celestialbronzeoreminlevel, Reference.celestialbronzeoremaxlevel);
 			break;
 		case 1:
 			break;
@@ -30,7 +32,7 @@ public class WorldGeneratorZOOM implements IWorldGenerator {
 			break;
 		}
 	}
-	private void addores(WorldGenerator generator, World world, Random rand, int chunkX, int chunkZ, int spawnchance, int minY, int maxY) {
+	private void generator(WorldGenerator generator, World world, Random rand, int chunkX, int chunkZ, int spawnchance, int minY, int maxY) {
 		if (minY < 0 || maxY > 256 || minY > maxY)
 			throw new IllegalArgumentException("Illegal Height Arguments");
 		int heightdiff = maxY - minY + 1;
